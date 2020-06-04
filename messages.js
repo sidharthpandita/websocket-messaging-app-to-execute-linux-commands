@@ -1,0 +1,1 @@
+messages = ["ls","pwd","date"];

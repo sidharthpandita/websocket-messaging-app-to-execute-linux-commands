@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script src="https://unpkg.com/node-forge@0.7.0/dist/forge.min.js"></script>
+    <div id="chat"></div>
+    <input id="message" type="text" placeholder="message" />
+    <button id="generate" onclick="randomCommand()">Generate Command</button>
+    <button id="send">Send</button>
+    <script src="client.js"></script>
+    <script>
+        function randomCommand()
+        {
+        message = document.getElementById("message");
+    	var arr = ["date","ls","pwd","history","free"];  
+	message.value =  arr[Math.floor(Math.random() * arr.length)]; 
+        }
+    </script>
+</body>
+
+</html>
